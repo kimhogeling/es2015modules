@@ -12,17 +12,17 @@ const qS = (selector) => document.querySelector.call(document, selector)
 // Object.create() is our radio active spider here. hurray!
 const qSA = (selector) => {
     // nothing special
-    let boringnodelist = document.querySelectorAll.call(document, selector)
+    const boringnodelist = document.querySelectorAll.call(document, selector)
 
     // steal higher order functions from array prototype
-    let objWithHigherOrderFunctions = {
+    const objWithHigherOrderFunctions = {
         map: (lambda) => Array.prototype.map.call(boringnodelist, lambda),
         forEach: (lambda) => Array.prototype.forEach.call(boringnodelist, lambda),
         reduce: (lambda) => Array.prototype.reduce.call(boringnodelist, lambda)
     }
 
     // composition baby!! make the boring node list awesome!
-    let supernodelist = Object.create(
+    const supernodelist = Object.create(
         objWithHigherOrderFunctions,
         boringnodelist
     )
