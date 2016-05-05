@@ -1,14 +1,14 @@
 # what is this?
 
-this is an experiment to get familiar with ES6 modules.
+This is small prototype to get familiar with ES6 modules.
 
 ```bash
 npm install
 npm start
 ```
-`npm run` starts a SimpleHTTPServer in python and also runs gulp.
-the result can be seen in the browser http://0.0.0.0:3000
+This starts a SimpleHTTPServer in python and also runs gulp.
+The result can be seen in the browser http://0.0.0.0:3000
 
-the js source files lie in `./src/js`
+The js source files lie in `./src/js`
 
-the transpiled cross-browser files are saved into `./public/js`
+The transpiled cross-browser files which are used in the browser are saved into `./public/js`
