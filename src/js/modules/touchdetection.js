@@ -4,8 +4,10 @@ import { qS } from './funwithdom'
  * private parts - hihi *
  ************************/
 
+const W = window
+
 // to prevent multiple checkings, let's save it in a private const
-const IS_TOUCH_DEVICE = (('ontouchstart' in window) || !!(window.DocumentTouch && document instanceof DocumentTouch))
+const IS_TOUCH_DEVICE = (('ontouchstart' in W) || !!(W.DocumentTouch && document instanceof DocumentTouch))
 
 
 /****************

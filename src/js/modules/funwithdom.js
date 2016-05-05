@@ -21,7 +21,7 @@ const qSA = (selector) => {
         reduce: (lambda) => Array.prototype.reduce.call(boringnodelist, lambda)
     }
 
-    // composition baby!!
+    // composition baby!! make the boring node list awesome!
     let supernodelist = Object.create(
         objWithHigherOrderFunctions,
         boringnodelist
@@ -31,6 +31,7 @@ const qSA = (selector) => {
 }
 
 
+// just a simple html appending thingy
 const appendHTML = (selector, html) => qS(selector).innerHTML += html
 
 
