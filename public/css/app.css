@@ -1,0 +1,73 @@
+.p-wr {
+    width: 100%;
+    margin: 0.5em 0;
+}
+.p {
+    float: left;
+    margin: 1%;
+    border: 1px solid #03A9F4;
+    width: 48%;
+    padding: 0.5em 0;
+    text-align: center;
+    background: #fff;
+    box-sizing: border-box;
+}
+.no-touch .p {
+    cursor: pointer;
+}
+.no-touch .p:hover {
+    background: #03A9F4;
+    color: #fff;
+}
+
+.p-img:after {
+    font-size: 8em;
+    content: '💃';
+    display: block;
+}
+
+.clear-after:after {
+    display: block;
+    content: '';
+    clear: left;
+}
+
+.is-no-touch-device:after, .is-yes-touch-device:after {
+    display: none;
+}
+.no-touch .is-no-touch-device:after {
+    content: '🖱';
+}
+.touch .is-yes-touch-device:after {
+    content: '📱';
+}
+.no-touch .is-no-touch-device:after {
+    display: inline
+}
+.touch .is-yes-touch-device:after {
+    display: inline
+}
+
+@media all and (min-width: 500px) {
+    .p {
+        width: 31.333333333333%
+    }
+}
+
+@media all and (min-width: 650px) {
+    .p {
+        width: 23%
+    }
+}
+
+@media all and (min-width: 900px) {
+    .p {
+        width: 18%
+    }
+}
+
+@media all and (min-width: 1150px) {
+    .p {
+        width: 14.66666666%
+    }
+}

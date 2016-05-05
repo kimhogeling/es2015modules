@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Try out ES6 stuff via gulp</title>
+        <style>
+            /* critical css */
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                font-family: "Helvetica Neue", sans-serif;
+                font-size: 16px
+            }
+            p, ul {
+                margin-bottom: 0.5em
+            }
+            p {
+                text-align: center;
+            }
+            .msg {
+                padding: 0.5em;
+                background: #03A9F4;
+                color: #fff
+            }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        <link rel="stylesheet" href="public/css/app.css" charset="utf-8">
+    </head>
+    <body>
+        <p class="msg">This page contains modern es2015 made cross-browser compatible with babelify. Most exciting for this prototype is ES6 Modules via export and import (see e.g. src/js/modules/crazyprices.js). Also pretty neat is the improved document.querySelectorAll with higher order functions via composition (see funwithdom module)</p>
+        <p class="msg">This device is a <span class="is-yes-touch-device"></span><span class="is-no-touch-device"></span> device (see touchdetection module)</p>
+
+        <div class="p-wr clear-after">
+            <div class="p"><div class="p-img"></div><div>Rotes Kleid</div><div class="p-price">345,12 €</div></div>
+            <div class="p"><div class="p-img"></div><div>Rotes Kleid</div><div class="p-price">8,53 €</div></div>
+            <div class="p"><div class="p-img"></div><div>Rotes Kleid</div><div class="p-price">85,99 €</div></div>
+            <div class="p"><div class="p-img"></div><div>Rotes Kleid</div><div class="p-price">986,79 €</div></div>
+            <div class="p"><div class="p-img"></div><div>Rotes Kleid</div><div class="p-price">756,34 €</div></div>
+            <div class="p"><div class="p-img"></div><div>Rotes Kleid</div><div class="p-price">1897,34 €</div></div>
+            <div class="p"><div class="p-img"></div><div>Rotes Kleid</div><div class="p-price">83,19 €</div></div>
+        </div>
+        <p class="msg">Sum of all products = <span class="sum"></span> (see crazyprices module)</p>
+
+        <script src="public/js/allpages.js"></script>
+        <script src="public/js/productspage.js"></script>
+
+    </body>
+</html>
