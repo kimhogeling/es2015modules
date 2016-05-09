@@ -1,4 +1,3 @@
-import { qS } from './funwithdom'
 
 /************************
  * private parts - hihi *
