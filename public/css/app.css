@@ -36,38 +36,38 @@
     display: none;
 }
 .no-touch .is-no-touch-device:after {
-    content: '🖱';
+    content: '🐭';
 }
 .touch .is-yes-touch-device:after {
     content: '📱';
 }
 .no-touch .is-no-touch-device:after {
-    display: inline
+    display: inline;
 }
 .touch .is-yes-touch-device:after {
-    display: inline
+    display: inline;
 }
 
 @media all and (min-width: 500px) {
     .p {
-        width: 31.333333333333%
+        width: 31.333333333333%;
     }
 }
 
 @media all and (min-width: 650px) {
     .p {
-        width: 23%
+        width: 23%;
     }
 }
 
 @media all and (min-width: 900px) {
     .p {
-        width: 18%
+        width: 18%;
     }
 }
 
 @media all and (min-width: 1150px) {
     .p {
-        width: 14.66666666%
+        width: 14.66666666%;
     }
 }

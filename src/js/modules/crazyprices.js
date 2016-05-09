@@ -1,5 +1,3 @@
-import { qSA } from './funwithdom'
-
 
 /************************
  * private parts - hihi *
@@ -22,7 +20,7 @@ const add = (a, b) => a + b
 
 // should be clear as it is almost simple english
 // the dividing by 100 is needed to convert cents back to normal price
-const extractPricesAndCalcSum = (selector) => qSA(selector).map(extractPrice).map(convertToCents).reduce(add) / 100
+const extractPricesAndCalcSum = (elements) => elements.map(extractPrice).map(convertToCents).reduce(add) / 100
 
 
 export { extractPricesAndCalcSum }
